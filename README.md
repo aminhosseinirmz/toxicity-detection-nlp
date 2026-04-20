@@ -25,7 +25,8 @@ Download:
 - `test.csv`
 - `test_labels.csv`
 
-from the Kaggle Jigsaw Toxic Comment Classification Challenge and place them in the `data/` folder.
+Download dataset from:
+https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge
 
 ## Main libraries
 - PyTorch
