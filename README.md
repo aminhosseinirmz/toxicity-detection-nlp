@@ -123,46 +123,37 @@ https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challeng
 
 ## 📁 Project Structure
 
+```text
 toxicity-detection-nlp/
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── notebooks/ # Jupyter notebooks for experiments
-│ ├── BERT.ipynb
-│ ├── CLSTM.ipynb
-│ ├── CNN.ipynb
-│ ├── CNN-BiGRU.ipynb
-│ ├── MCBiGRU.ipynb
-│ └── MLP.ipynb
-│
+├── notebooks/              # Jupyter notebooks for experiments
+│   ├── BERT.ipynb
+│   ├── CLSTM.ipynb
+│   ├── CNN.ipynb
+│   ├── CNN-BiGRU.ipynb
+│   ├── MCBiGRU.ipynb
+│   └── MLP.ipynb
 ├── src/
-│ ├── models/ # Model implementations
-│ │ ├── base_model.py
-│ │ ├── bert.py
-│ │ ├── clstm.py
-│ │ ├── cnn.py
-│ │ ├── cnn_bigru.py
-│ │ ├── mc_bigru.py
-│ │ └── mlp.py
-│ │
-│ └── preprocessing/ # Data preprocessing utilities
-│ ├── init.py
-│ └── utils.py
-│
-├── report/ # Project report (LaTeX + PDF)
-│ ├── acl2015.pdf
-│ ├── acl2015.tex
-│ ├── refs.bib
-│ └── acl2015.sty
-│
+│   ├── models/             # Model implementations
+│   │   ├── base_model.py
+│   │   ├── bert.py
+│   │   ├── clstm.py
+│   │   ├── cnn.py
+│   │   ├── cnn_bigru.py
+│   │   ├── mc_bigru.py
+│   │   └── mlp.py
+│   └── preprocessing/      # Data preprocessing utilities
+│       ├── __init__.py
+│       └── utils.py
+├── report/                 # Project report (PDF)
+│   └── acl2015.pdf
 ├── results/
-│ └── metrics/ # Evaluation results (CSV logs)
-│
-├── data/ # Dataset (not included)
-│ └── README.md
-│
-└── checkpoints/ # Model weights (not included)
+│   └── metrics/            # Evaluation results (CSV logs)
+├── data/                   # Dataset (not included)
+│   └── README.md
+├── checkpoints/            # Trained model weights (not included)
+├── .gitignore
+├── README.md
+└── requirements.txt
 
 ---
 
