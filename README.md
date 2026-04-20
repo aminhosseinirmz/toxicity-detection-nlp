@@ -151,10 +151,8 @@ toxicity-detection-nlp/
 ├── data/                   # Dataset (not included)
 │   └── README.md
 ├── checkpoints/            # Trained model weights (not included)
-├── .gitignore
-├── README.md
-└── requirements.txt
-
+└── README.md
+```
 ---
 
 ## 🔮 Future Work
