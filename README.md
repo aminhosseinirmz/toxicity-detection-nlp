@@ -27,6 +27,9 @@ Toxicity detection is a critical problem in modern online platforms, where autom
 
 This dataset reflects real-world toxic behavior in online discussions.
 
+Download the dataset from:
+https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge
+
 ---
 
 ## 🏗 Models Implemented
@@ -120,24 +123,46 @@ This dataset reflects real-world toxic behavior in online discussions.
 
 ## 📁 Project Structure
 
-models/
-├── bert.py  
-├── cnn.py  
-├── clstm.py  
-├── cnn_bigru.py  
-├── mc_bigru.py  
-├── mlp.py  
-
-utils/
-├── utils.py  
-├── base_model.py  
-
-results/
-├── metrics/  
-├── plots/  
-
-notebooks/
-├── training & experiments  
+toxicity-detection-nlp/
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── notebooks/                 # Jupyter notebooks for experiments
+│   ├── BERT.ipynb
+│   ├── CLSTM.ipynb
+│   ├── CNN.ipynb
+│   ├── CNN-BiGRU.ipynb
+│   ├── MCBiGRU.ipynb
+│   └── MLP.ipynb
+│
+├── src/
+│   ├── models/                # Model implementations
+│   │   ├── base_model.py
+│   │   ├── bert.py
+│   │   ├── clstm.py
+│   │   ├── cnn.py
+│   │   ├── cnn_bigru.py
+│   │   ├── mc_bigru.py
+│   │   └── mlp.py
+│   │
+│   └── preprocessing/         # Data preprocessing utilities
+│       ├── __init__.py
+│       └── utils.py
+│
+├── report/                    # Project report (LaTeX + PDF)
+│   ├── acl2015.pdf
+│   ├── acl2015.tex
+│   ├── refs.bib
+│   └── acl2015.sty
+│
+├── results/
+│   └── metrics/               # Evaluation results (CSV logs)
+│
+├── data/                      # Dataset (not included)
+│   └── README.md
+│
+└── checkpoints/               # Trained model weights (not included)
 
 ---
 
@@ -153,13 +178,3 @@ notebooks/
 ## 👤 Author
 Seyedamin Hosseini  
 Sapienza University of Rome  
-
----
-
-## 📄 Reference
-Survey of Comment Toxicity Detection: Comparing CNN-BiGRU and MCBiGRU Architectures
-
----
-
-## 💬 Final Note
-This project is a structured comparison of deep learning architectures, highlighting what works, what doesn’t, and why.
