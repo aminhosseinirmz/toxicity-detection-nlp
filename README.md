@@ -1,4 +1,4 @@
-# 🧠 Toxic Comment Classification — Deep Learning Survey & Implementation
+# Toxic Comment Classification — Deep Learning Survey & Implementation
 
 ## 📌 Overview
 This project presents a comparative study of deep learning architectures for toxic comment detection and sentence semantic classification. The goal is to evaluate how different models capture both local textual features and long-range semantic dependencies in a multi-label classification setting.
